@@ -1,36 +1,6 @@
-package main
+package sb_ft
 
-import (
-	"fmt"
-	"sort"
-)
-
-func Josephus(items []interface{}, k int) []interface{} {
-	res := make([]interface{}, 0)
-	index := 0
-	for len(items) > 0 {
-		for i := k; i >= 0; {
-			if index >= len(items) {
-				index = 0
-			}
-			if i == 0 {
-				res = append(res, items[index])
-				items = append(items[:index], items[index+1:]...)
-				index--
-			}
-			index++
-			i--
-		}
-	}
-	return res
-}
-
-func main() {
-	//println(getResult([]int{0, 0, 0}, []string{"-", "//", "+"}))
-	println(getResult2([]int{3, 2, 4, 5}, 7))
-
-	fmt.Println(Josephus([]interface{}{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, 2))
-}
+import "sort"
 
 func getResult2(arr []int, w int) bool {
 	sort.Ints(arr)
