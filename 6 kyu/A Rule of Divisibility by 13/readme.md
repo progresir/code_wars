@@ -1,4 +1,4 @@
-#[From Wikipedia](https://www.codewars.com/kata/564057bc348c7200bd0000ff)
+# [From Wikipedia](https://www.codewars.com/kata/564057bc348c7200bd0000ff)
 
 "A divisibility rule is a shorthand way of determining whether a given integer is divisible by a fixed divisor without performing the division, usually by examining its digits."
 
